@@ -9,6 +9,7 @@ export const ItemDetail = ({product}) => {
         console.log('cantidad seleccionada: ', cant)
        }
    
+       
   return (
     <>
     <div className='detalles'>

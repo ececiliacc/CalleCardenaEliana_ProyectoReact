@@ -8,6 +8,7 @@ const products = [
 
 
 export const mFetch = (id) => {
+  
   return new Promise ( (res, rej) => {
     setTimeout(()=> {
         res(id ? products.find(prod =>prod.id ===id) :products)

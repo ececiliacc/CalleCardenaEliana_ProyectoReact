@@ -7,6 +7,7 @@ export const ItemCounter = ({initial=1, stock=10, onAdd}) => {
     const handleOnAdd=()=>{
         onAdd(count)
     }
+    
 
   return (
 <>

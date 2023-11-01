@@ -9,9 +9,6 @@ import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetail
 // import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-
-
 function App() {
 
   return (
