@@ -1,0 +1,36 @@
+*{margin: 0;
+padding: 0;}
+
+.card-product{
+    width: 18rem;
+    margin: 1vh;
+}
+
+.row-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.card-imagen{
+    height: 20rem;
+    padding: 20px;   
+}
+
+.card-titulo{
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-autor p{
+    display: inline;
+    font-weight:400;
+    
+}
+
+.card-autor{
+    font-weight:bold;
+    margin-left: 10px;
+}

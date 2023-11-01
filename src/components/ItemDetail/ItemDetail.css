@@ -1,0 +1,34 @@
+.detalles{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contenedor{
+    margin: 1.5rem;
+    height: 550px;
+    width: 350px;
+    object-fit: cover;
+}
+
+.detail-description{
+    text-align: justify;
+}
+
+.detail-titulo{
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+}
+
+.detail-contenido p{
+    display: inline;
+    font-weight:400;
+}
+
+.detail-contenido{
+    font-weight:bold;
+    margin-left: 10px;
+    font-size: 17px;
+}

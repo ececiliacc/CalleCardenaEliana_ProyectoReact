@@ -1,0 +1,27 @@
+.navbar-contenedor{
+background-color: #01023D !important;
+}
+
+.nav-link{
+    color: #ffffff !important;
+  }
+
+  .navbar-toggler-icon{
+    background-color: #ffffff !important;
+  }
+
+  .navbar-toggler{
+    background-color: #ffffff !important;
+    color:#ffffff !important;
+    border: #ffffff !important;
+
+  }
+
+  .texto{
+    font-size: 20px;
+  }
+
+.btn-color{
+  color: #ffffff !important;
+}
+
