@@ -29,7 +29,6 @@ export const ItemList = ({products}) => {
             )
         }
       </div>
-      
     </>
   )
 }

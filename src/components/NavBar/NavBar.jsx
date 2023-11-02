@@ -29,11 +29,11 @@ const NavBar = () => {
                 <Navbar.Collapse id="responsive-navbar-nav" className="texto edit" >
                   <Nav className="me-auto ">
                       <NavLink className={({isActive}) => isActive ? 'btn btn-outline-light' : ' btn btn-color' } to="/">Inicio</NavLink>                    
-                      <NavLink className={({isActive}) => isActive ? 'btn btn-outline-light' : 'btn btn-color' } to = '/category/literatura' href="#action/3.1">Literatura</NavLink>             
-                      <NavLink className={({isActive}) => isActive ? 'btn btn-outline-light' : 'btn btn-color'} to = '/category/infantil' href="#action/3.2">Infantil</NavLink>               
-                      <NavLink className={({isActive}) => isActive ? 'btn btn-outline-light' : 'btn btn-color'} to = '/category/anime' href="#action/3.3">Anime/Manga</NavLink>
-                      <NavLink className={({isActive}) => isActive ? 'btn btn-outline-light' : 'btn btn-color'} to = '/category/viajes' href="#action/3.4">Viajes</NavLink>                  
-                      <NavLink className={({isActive}) => isActive ? 'btn btn-outline-light' : 'btn btn-color'} to = '/category/ciencia' href="#action/3.5">Ciencia</NavLink>
+                      <NavLink className={({isActive}) => isActive ? 'btn btn-outline-light' : 'btn btn-color' } to = '/category/Literatura' href="#action/3.1">Literatura</NavLink>             
+                      <NavLink className={({isActive}) => isActive ? 'btn btn-outline-light' : 'btn btn-color'} to = '/category/Infantil' href="#action/3.2">Infantil</NavLink>               
+                      <NavLink className={({isActive}) => isActive ? 'btn btn-outline-light' : 'btn btn-color'} to = '/category/Anime' href="#action/3.3">Anime/Manga</NavLink>
+                      <NavLink className={({isActive}) => isActive ? 'btn btn-outline-light' : 'btn btn-color'} to = '/category/Viajes' href="#action/3.4">Viajes</NavLink>                  
+                      <NavLink className={({isActive}) => isActive ? 'btn btn-outline-light' : 'btn btn-color'} to = '/category/Ciencia' href="#action/3.5">Ciencia</NavLink>
                     {/* <Nav.Link  href="#club">Club de Lectura</Nav.Link> */}
                   </Nav>
                   <Nav>

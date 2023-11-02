@@ -14,34 +14,35 @@ const ItemListConatainer = ({greeting='Bienvenido a Caja de Libros'}) => {
   //Llamando API (fetch)
   useEffect(()=>{
 
-    if(cid){
-      mFetch()
-      .then(resultado => setProducts(resultado.filter(product => product.category === cid)))
-      .catch(error => console.log(error))
-      .finally(()=> setLoading(false))
+        if(cid){
 
-    }else{
-      mFetch()
-      .then(resultado => setProducts(resultado))
-      .catch(error => console.log(error))
-      .finally(()=> setLoading(false))
-    }
+          mFetch()
+          .then(resultado => setProducts(resultado.filter(product => product.category === cid)))
+          .catch(error => console.log(error))
+          .finally(()=> setLoading(false))
+
+        }else{
+          mFetch()
+          .then(resultado => setProducts(resultado))
+          .catch(error => console.log(error))
+          .finally(()=> setLoading(false))
+        }
   }, [cid])
-
 
   return (
 
     <>
-     <div className="alineacion">
+     {/* <div className="alineacion">
          {greeting}
-     </div>
+     </div> */}
 
-     <div className="row">
+     
     { loading ? <h2>loading</h2>
       :
+
       <ItemList products={products}/>
     }
-       </div>
+       
     </>
    
   

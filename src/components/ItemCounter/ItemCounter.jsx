@@ -17,10 +17,10 @@ export const ItemCounter = ({initial=1, stock=10, onAdd}) => {
         </div> */}
 
         <div>
-            <button className='btn btn-danger' onClick={handleSubs}>-</button>
+            <button className='boton-resta' onClick={handleSubs}>-</button>
             <label className='label'>{count}</label>
-            <button className='btn btn-success' onClick={handleAdd}>+</button>
-            <button  className='btn btn-outline-dark w-100' onClick={handleOnAdd}>Añadir al carrito</button>
+            <button className='boton-suma' onClick={handleAdd}>+</button>
+            <button  className='boton-añadir' onClick={handleOnAdd}>Añadir al carrito</button>
         </div>
 
     </div>

@@ -1,9 +1,9 @@
 .navbar-contenedor{
-background-color: #01023D !important;
+background-color: #ff5a14d2 !important;
 }
 
 .nav-link{
-    color: #ffffff !important;
+    color: #0F4C5C!important;
   }
 
   .navbar-toggler-icon{
@@ -22,6 +22,7 @@ background-color: #01023D !important;
   }
 
   .btn-color{
-    color: #ffffff !important;
+    color: #0F4C5C !important;
+    font-weight: 500 !important;
   }
 
