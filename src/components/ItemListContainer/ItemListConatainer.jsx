@@ -1,9 +1,19 @@
 import { useEffect, useState } from "react"
-import { mFetch } from "../../helpers/mFetch"
+import{collection, getDocs, getFirestore, query, where} from 'firebase/firestore';
 import { useParams } from "react-router-dom"
+import { FaSpinner } from "react-icons/fa6";
 import { ItemList } from "../ItemList/ItemList"
 
 import "./ItemListConatainer.css"
+
+const Loading = () => {
+  useEffect(()=>{
+    return() =>{
+      console.log('desmontaje loading')
+    }
+  })
+  return <div className="spinner" ><FaSpinner/></div>
+}
 
 const ItemListConatainer = ({greeting='Bienvenido a Caja de Libros'}) => {
 
@@ -11,40 +21,51 @@ const ItemListConatainer = ({greeting='Bienvenido a Caja de Libros'}) => {
   const [loading, setLoading] = useState(true)
   const {cid} = useParams()
 
-  //Llamando API (fetch)
+  ///LLamado firestore
+
   useEffect(()=>{
+    const baseDatosFirestore = getFirestore()
+    const queryCollection = collection(baseDatosFirestore, 'libros')
 
-        if(cid){
+    if(cid){
+      ///llamando base de datos por filtro usando query para filtrar
+    
+      ///query para hacer filtrado
+      const queryFilter = query(queryCollection, where('category', '==', cid))
 
-          mFetch()
-          .then(resultado => setProducts(resultado.filter(product => product.category === cid)))
-          .catch(error => console.log(error))
-          .finally(()=> setLoading(false))
+      getDocs(queryFilter)
+      .then(res=> setProducts( res.docs.map(product => ({id: product.id, ...product.data()}))))
+      .catch(err => console.log(err))
+      .finally(() => setLoading(false))
 
-        }else{
-          mFetch()
-          .then(resultado => setProducts(resultado))
-          .catch(error => console.log(error))
-          .finally(()=> setLoading(false))
-        }
-  }, [cid])
+    }else{
+
+       //// Llamando a la base de datos  firestore
+  
+      getDocs(queryCollection)
+      .then(res=> setProducts( res.docs.map(product => ({id: product.id, ...product.data()}))))
+      .catch(err => console.log(err))
+      .finally(() => setLoading(false))
+
+    }
+
+  },[cid])
+
+
+  console.log('REnder ItemListContainer')
 
   return (
 
     <>
-     {/* <div className="alineacion">
-         {greeting}
-     </div> */}
+          
+      { loading ? 
+          <Loading/>
+        :
 
-     
-    { loading ? <h2>loading</h2>
-      :
-
-      <ItemList products={products}/>
-    }
+        <ItemList products={products}/>
+      }
        
     </>
-   
   
   )
 }

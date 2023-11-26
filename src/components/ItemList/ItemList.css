@@ -8,29 +8,52 @@ padding: 0;}
 
 .row-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: #ede0d4;
     flex-wrap: wrap;
-    background-color: #f8f9fa;;
 
 }
 
-.card-imagen{
+.card-image{
     height: 20rem;
     padding: 20px;   
+    background-color: #b08968
 }
 
-.card-titulo{
+.card-title{
     font-weight: bold;
     text-align: center;
 }
 
-.card-autor p{
+.card-author p{
     display: inline;
     font-weight:400;
 }
 
-.card-autor{
+.card-author{
     font-weight:bold;
     margin-left: 10px;
+}
+
+.card-bodyFormat{
+    background-color: #ddb892;
+    color: #503727 !important;
+}
+
+.card-footerFormat{
+    background-color: #ddb892 !important;
+    width: 100%;
+}
+
+.button-list{
+    background-color: #a6490c !important;
+    color: #ffffff !important;
+    border-color: #503727 !important;
+}
+
+button:hover{
+    background-color: #e08e29 !important;
 }

@@ -1,9 +1,15 @@
 .navbar-contenedor{
-background-color: #ff5a14d2 !important;
+background-color: #7f5539 !important;
+
 }
 
 .nav-link{
-    color: #0F4C5C!important;
+    color: #ffffff!important;
+  }
+
+  .cart-edit{
+    color: #ffffff;
+    
   }
 
   .navbar-toggler-icon{
@@ -22,7 +28,7 @@ background-color: #ff5a14d2 !important;
   }
 
   .btn-color{
-    color: #0F4C5C !important;
+    color: #ffffff !important;
     font-weight: 500 !important;
   }
 

@@ -1,8 +1,9 @@
 .label{
     margin: 1rem;
+    color: #562a0e;
 }
 
-.boton-resta{
+.button-subs{
     box-sizing: content-box;
     color: #ffffff;
     background-color: #ff0000;
@@ -13,7 +14,7 @@
     border-color: #0F4C5C;
 }
 
-.boton-suma{
+.button-adition{
     box-sizing: content-box;
     color: #ffffff;
     background-color: #98DA00;
@@ -24,14 +25,14 @@
     border-color: #0F4C5C;
 }
 
-.boton-añadir{
-    border-color: #FCD514;
+.button-add{
+    border-color: #ffad03;
     width: 100%;
     border-radius: 10px;
     height: 2rem;
     color: #ffffff;
     font-size: 20px;
     box-sizing: content-box;
-    background-color:#FCD514;
+    background-color:#ffad03;
     font-weight:700;
 }
