@@ -34,6 +34,23 @@ Este proyecto usa diferentes librerias que detallaremos a continuacion:
 
 Si deseas colaborar con esta comunidad realiza los cambios respectivos para asi poder mejorar el proyecto
 
+## SDK Firebase
+
+import { initializeApp } from "firebase/app";
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+ ## apiKey: "AIzaSyCZ_Jz9AEFk0tUgRIihYZtQoYpMJDrmXqc",
+  authDomain: "caja-de-libros.firebaseapp.com",
+  projectId: "caja-de-libros",
+  storageBucket: "caja-de-libros.appspot.com",
+  messagingSenderId: "393573667944",
+  appId: "1:393573667944:web:cabe2fe0fc3e19bc6dd7dd"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
