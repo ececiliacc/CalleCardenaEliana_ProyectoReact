@@ -20,6 +20,7 @@ npm run dev
 Este proyecto usa diferentes librerias que detallaremos a continuacion:
 
 | Nombre | Vesrion | Descripcion |
+
 | Bootstrap | 5.3.2 | Nos permite diseñar nuestro proyecto |
 | Firebase | 10.6.0 | Gracias a esta libreria se puede almacenar en una base de datos los productos y sus diferentes campos |
 | React-Bootstrap | 2.9.0 | Combina la utilidad de bootstrap con la eficiencia de React |
